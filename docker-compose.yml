@@ -1,0 +1,10 @@
+version: "3"
+services:
+  alpine-tautulli:
+    build:
+      context: .
+      args:
+        VERSION: v2.0.7-beta
+    image: petemcw/docker-tautulli
+    ports:
+      - "8181:8181"
